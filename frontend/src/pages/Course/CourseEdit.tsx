@@ -127,8 +127,7 @@ export default function CourseEdit({
           <tr>
             <th>Schedule</th>
             <td>
-              <input
-                type="text"
+              <select
                 value={schedule}
                 onChange={(e) =>
                   setSchedule(
@@ -143,7 +142,15 @@ export default function CourseEdit({
                     >
                   )
                 }
-              />
+              >
+                <option value="MONDAY">Monday</option>
+                <option value="TUESDAY">Tuesday</option>
+                <option value="WEDNESDAY">Wednesday</option>
+                <option value="THURSDAY">Thursday</option>
+                <option value="FRIDAY">Friday</option>
+                <option value="SATURDAY">Saturday</option>
+                <option value="SUNDAY">Sunday</option>
+              </select>
             </td>
           </tr>
           <tr>
