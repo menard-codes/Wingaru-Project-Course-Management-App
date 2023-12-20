@@ -17,7 +17,6 @@ interface AddCourseModalProps {
 export default function AddCourseModal({
   setModalIsOpen,
 }: AddCourseModalProps) {
-  // TODO: Handle input in state
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
   const [schedule, setSchedule] = useState<

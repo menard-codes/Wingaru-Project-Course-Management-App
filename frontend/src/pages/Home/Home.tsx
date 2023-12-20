@@ -8,7 +8,6 @@ import { useAppSelector } from "../../hooks/reduxCustomHooks";
 export default function Home() {
   const courses = useAppSelector((state) => state.courses);
 
-  // TODO: Use real data later
   const totalCourses = courses.length;
 
   return (
