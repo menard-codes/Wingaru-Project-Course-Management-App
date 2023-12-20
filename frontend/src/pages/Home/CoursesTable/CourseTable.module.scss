@@ -1,0 +1,25 @@
+$table-header-bg: #333;
+$table-header-color: #eee;
+
+.courseTable {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr > th {
+    background-color: $table-header-bg;
+    color: $table-header-color;
+    text-align: center;
+  }
+}

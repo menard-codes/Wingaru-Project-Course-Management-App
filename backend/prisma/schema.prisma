@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  id              String   @id @default(uuid())
+  title           String   @unique
+  details         String   @db.LongText
+  schedule        Day
+  duration        Float
+  location        Location
+  locationDetails String
+  availableSeats  Int?
+  enrollmentCount Int
+}
+
+enum Location {
+  ONLINE
+  IN_PERSON
+}
+
+enum Day {
+  SUNDAY
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+}

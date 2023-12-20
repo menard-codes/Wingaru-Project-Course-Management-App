@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&display=swap");
+
+.navbar {
+  $nav-bg: #0080a2;
+  $nav-text-color: #f6f7c4;
+
+  background-color: $nav-bg;
+  padding: 1rem;
+  text-align: center;
+
+  a[href] {
+    text-decoration: none;
+
+    .logo {
+      color: $nav-text-color;
+      font-size: 2rem;
+      font-family: "Joti One";
+      letter-spacing: 0.1rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $nav-text-color;
+        text-underline-offset: 0.2rem;
+      }
+    }
+  }
+}

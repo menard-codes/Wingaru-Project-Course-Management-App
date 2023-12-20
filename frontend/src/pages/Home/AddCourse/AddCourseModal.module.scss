@@ -1,0 +1,64 @@
+.modalContainer {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .modal {
+    position: absolute;
+    top: calc(calc(80 / 16) * 1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: calc(calc(550 / 16) * 1rem);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .closeBtn {
+      background-color: crimson;
+      color: white;
+      font-size: 1.3rem;
+      border-radius: 50%;
+      border: none;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: hsl(348, 83%, 37%);
+      }
+    }
+
+    .newCourseForm {
+      display: grid;
+      gap: 0.5rem;
+      padding: 1rem 0.3rem;
+
+      .btnSubmit {
+        font: inherit;
+        padding: 0.2rem 0.3rem;
+        margin-top: 1rem;
+        background-color: hsl(61, 76%, 67%);
+        color: #222;
+        font-weight: 900;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: hsl(61, 76%, 47%);
+        }
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        font: inherit;
+        padding: 0.2rem 0.3rem;
+      }
+
+      label {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

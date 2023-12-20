@@ -1,0 +1,23 @@
+$primary-btn-clr: hsl(192, 73%, 70%);
+$primary-btn-darker: hsl(192, 73%, 50%);
+
+.addCourseBtn {
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.2rem 0.5rem;
+  border: 4px solid $primary-btn-clr;
+  background-color: white;
+  border-radius: 1rem;
+  color: $primary-btn-clr;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $primary-btn-clr;
+    color: white;
+  }
+
+  &:active {
+    background-color: $primary-btn-darker;
+    border-color: $primary-btn-darker;
+  }
+}

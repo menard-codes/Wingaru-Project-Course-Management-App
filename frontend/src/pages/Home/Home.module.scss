@@ -1,0 +1,13 @@
+.homeContainer {
+  width: 100%;
+  max-width: calc(calc(720 / 16) * 1rem);
+  margin: auto;
+  padding-block: 1rem;
+
+  .pageHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
